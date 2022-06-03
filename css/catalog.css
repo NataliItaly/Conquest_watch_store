@@ -1,0 +1,471 @@
+body {
+  color: #b3b3b3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-link-list {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.men-watch {
+  padding-top: 0px;
+}
+
+.sort-block {
+  width: 230px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #bdb9b5;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting {
+  border: none;
+}
+
+.sorting:focus-visible {
+  border: none;
+}
+
+.sorting option {
+  color: #555248;
+}
+
+.men-watch-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  gap: 90px;
+}
+
+.men-watch-text-column {
+  max-width: 230px;
+}
+
+.watch-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.watch-card {
+  width: 252px;
+  height: 301px;
+  padding: 20px 0 0 20px;
+  transition: 0.4s linear;
+  position: relative;
+}
+
+.watch-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.watch-card.banner:hover {
+  box-shadow: none;
+}
+
+.watch-card:nth-child(3n + 1) {
+  margin-left: -50px;
+}
+
+.watch-card:nth-child(3n) {
+  margin-right: 10px;
+}
+
+.watch-card .wish-buy-icons {
+  top: 22px;
+}
+
+.watch-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.watch-card-link:hover {
+  text-decoration: none;
+}
+
+.watch-card.one {
+  background-image: url("../img/catalog/watch_1.jpg");
+}
+
+.watch-card.two {
+  background-image: url("../img/catalog/watch_2.jpg");
+}
+
+.watch-card.three {
+  background-image: url("../img/catalog/watch_3.jpg");
+}
+
+.watch-card.four {
+  background-image: url("../img/catalog/watch_4.jpg");
+}
+
+.watch-card.five {
+  background-image: url("../img/catalog/watch_5.jpg");
+}
+
+.watch-card.six {
+  background-image: url("../img/catalog/watch_6.jpg");
+}
+
+.watch-card.seven {
+  background-image: url("../img/catalog/watch_7.jpg");
+}
+
+.watch-card.eight {
+  background-image: url("../img/catalog/watch_8.jpg");
+}
+
+.banner {
+  background-image: url("../img/catalog/banner.jpg");
+}
+
+.watch-text-column-title {
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  color: #444240;
+}
+
+#price-range {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sort-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-button {
+  background-color: transparent;
+  border: none;
+  font-size: 21px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.6s all ease;
+}
+
+.sort-span {
+  display: block;
+  width: 12px;
+  background: #1d1a1a;
+  height: 2px;
+  position: relative;
+  margin: auto;
+}
+
+.sort-button:hover {
+  filter: invert(71%) sepia(52%) saturate(275%) hue-rotate(339deg)
+    brightness(89%) contrast(86%);
+}
+
+.sort-span::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1d1a1a;
+  transform: rotate(-90deg);
+}
+
+.sort-button.open .sort-span::before {
+  display: none;
+}
+
+.brend-item,
+.mechanic-item,
+.color-item,
+.material-item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.brend-item label,
+.mechanic-item label,
+.color-item label,
+.material-item label {
+  font-size: 12px;
+  line-height: 0%;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  color: #6f6e6d;
+  margin-left: 15px;
+}
+
+.sort-item {
+  margin-top: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.white-btn {
+  width: 230px;
+  height: 60px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid #e7e0cf;
+  border-radius: 7px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1d1a1a;
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  text-shadow: none;
+}
+
+.white-btn::before {
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 0%;
+  height: 0px;
+  width: 100%;
+  border-radius: 6px;
+  content: "";
+  background: #db996ccf;
+  opacity: 0.5;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.white-btn:hover::before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+
+.white-btn .span-btn {
+  color: #1d1a1a;
+}
+
+.see-logo {
+  width: 150px;
+  height: 150px;
+}
+
+.pagination-list {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.men-watch-pagination {
+  width: 117px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-link {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #444240;
+}
+
+.current-page {
+  color: #b6b6b6;
+}
+
+.pagination-btn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 7px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.left {
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.right {
+  background-image: url("../img/svg/arrow.svg");
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+}
+
+.recommend {
+  padding-top: 80px;
+}
+
+.recommend .see-all {
+  top: 20px;
+}
+
+.recommend-item {
+  width: 360px;
+  height: 374px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  transition: 0.4s linear;
+}
+
+.recommend-item:hover .item-title {
+  color: #7b7774;
+}
+
+.recommend-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.recommend-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.recommend-item.one {
+  background-image: url("../img/recommend/straps1.jpg");
+}
+
+.recommend-item.two {
+  background-image: url("../img/recommend/straps2.jpg");
+}
+
+.recommend-item.three {
+  background-image: url("../img/recommend/straps3.jpg");
+}
+
+.recommend-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1330px) {
+  .men-watch .container {
+    padding: 0 20px;
+  }
+  .watch-card:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+  .watch-card:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1117px) {
+  .watch-list {
+    gap: 20px;
+  }
+  .sort-block {
+    right: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .men-watch-text-column {
+    width: 25%;
+    min-width: 118px;
+  }
+  .white-btn {
+    width: 95%;
+  }
+  .watch-card {
+    width: 180px;
+    background-size: cover;
+    border: 1px solid blue;
+  }
+  .watch-card {
+    margin-left: 0px;
+    width: 220px;
+  }
+  .men-watch-wrapper {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 580px) {
+  .sort-block {
+    position: static;
+  }
+}
+
+@media (max-width: 420px) {
+  .men-watch-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sort-item {
+    margin-top: 15px;
+  }
+  .men-watch-text-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .sort-item,
+  #price-range {
+    margin-top: 10px;
+  }
+  .white-btn {
+    height: 40px;
+    margin-top: 15px;
+  }
+  .men-watch-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .watch-list {
+    justify-content: center;
+  }
+  .sort-block {
+    position: static;
+  }
+  .watch-card {
+    margin: 0;
+  }
+  .watch-card:nth-child(3n) {
+    margin-right: 0px;
+    margin-left: 0;
+  }
+}

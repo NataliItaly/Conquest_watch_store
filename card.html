@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <title>Conquest Card</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container flex-container">
+        <div class="logo"></div>
+        <nav class="header-menu">
+          <ul class="link-list">
+            <li><a href="catalog1.html" class="header-link">Каталог</a></li>
+            <li><a href="#" class="header-link">Акции</a></li>
+            <li><a href="#" class="header-link">Доставка</a></li>
+            <li><a href="#" class="header-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-icons">
+          <li><button class="header-icon loupe"></button></li>
+          <li><button class="header-icon heart"></button></li>
+          <li><a href="#" class="header-icon basket"></a></li>
+        </ul>
+        <div class="burger-menu">
+          <span class="burger-line"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="card-main">
+      <header class="card-header">
+        <div class="container">
+          <ul class="catalog-link-list">
+            <li><a href="index.html" class="catalog-link">Главная</a></li>
+            <li><a href="catalog1.html" class="catalog-link">Каталог</a></li>
+            <li><a href="#" class="catalog-link">Мужские часы</a></li>
+            <li><a href="" class="catalog-link here">Kulte</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="single-card">
+        <div class="container flex-container">
+          <div class="card-text-column">
+            <h3 class="item-title">KULTE, 26 ММ</h3>
+            <p class="item-price">12 700 <span class="rouble">&#8381;</span></p>
+            <div class="single-card-icon">
+              <button class="single-card-heart heart"></button>
+            </div>
+            <div class="single-card-buttons">
+              <button
+                class="single-card-btn basic-description-btn current-description"
+              >
+                Описание
+              </button>
+              <button class="single-card-btn technical-description-btn">
+                Технические характеристики
+              </button>
+            </div>
+
+            <div class="single-card-description">
+              <div class="basic-description open-description">
+                <p>
+                  Наручные часы KULTE, разработанные датским дизайнером
+                  Хэннингом Коппелем, были выпущены в 1982 году. Они были
+                  встречены аплодисментами, а дизайн считался революционным.
+                </p>
+                <p>
+                  Общая эстетика минималистична, а острые, плавные линии корпуса
+                  стали легендарными. Механизм Swiss Made обеспечивает высокий
+                  уровень технических характеристик.
+                </p>
+                <p>
+                  Наручные часы KULTE — это образец датского дизайнерского
+                  наследия, история баланса и точности как внутри, так и
+                  снаружи.
+                </p>
+              </div>
+
+              <div class="technical-description hidden-description">
+                <ul class="technical-description-list">
+                  <li>Тип: Мужские</li>
+                  <li>Механизм: Кварцевый</li>
+                  <li>Тип циферблата: Стрелочный</li>
+                  <li>Стиль: Сasual</li>
+                  <li>Функции: Дата</li>
+                  <li>Тип крепления: Браслет</li>
+                  <li>Стекло Минеральное с сапфировым напылением</li>
+                  <li>Формат: 12 ч</li>
+                  <li>Вид циферблата: Арабские цифры</li>
+                  <li>Форма корпуса: Круглая</li>
+                </ul>
+              </div>
+
+              <button class="dark-btn move-to-basket">
+                <span class="span-btn">В КОРЗИНУ</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-img-column">
+            <div class="card-img-wrapper">
+              <div class="slider">
+                <div class="slider-item current-slide">
+                  <img src="img/single-card/2.jpg" alt="watch photo" />
+                </div>
+
+                <div class="slider-item">
+                  <img src="img/single-card/3.jpg" alt="watch photo" />
+                </div>
+
+                <div class="slider-item">
+                  <img src="img/single-card/4.jpg" alt="watch photo" />
+                </div>
+
+                <div class="slider-item">
+                  <img src="img/single-card/5.jpg" alt="watch photo" />
+                </div>
+
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+              </div>
+            </div>
+            <div class="slider-preview">
+              <div class="slider-item-preview">
+                <img src="img/single-card/2.jpg" alt="watch photo" />
+              </div>
+
+              <div class="slider-item-preview">
+                <img src="img/single-card/3.jpg" alt="watch photo" />
+              </div>
+
+              <div class="slider-item-preview">
+                <img src="img/single-card/4.jpg" alt="watch photo" />
+              </div>
+
+              <div class="slider-item-preview">
+                <img src="img/single-card/5.jpg" alt="watch photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent-items">
+        <div class="container">
+          <h2 class="section-title">Вы смотрели</h2>
+          <ul class="recommend-list recent-list">
+            <li class="recommend-item recent-item one">
+              <a href="card.html" class="recent-link">
+                <h4 class="item-title">TECHNE</h4>
+                <p class="item-price">
+                  15 700
+                  <span class="rouble">&#8381;</span>
+                </p>
+              </a>
+              <ul class="wish-buy-icons">
+                <li><button class="heart"></button></li>
+                <li><a href="#" class="basket"></a></li>
+              </ul>
+            </li>
+            <li class="recommend-item recent-item two">
+              <a href="card.html" class="recent-link">
+                <h4 class="item-title">TECHNE</h4>
+                <p class="item-price">
+                  15 700
+                  <span class="rouble">&#8381;</span>
+                </p>
+              </a>
+              <ul class="wish-buy-icons">
+                <li><button class="heart"></button></li>
+                <li><a href="#" class="basket"></a></li>
+              </ul>
+            </li>
+            <li class="recommend-item recent-item three">
+              <a href="card.html" class="recent-link">
+                <h4 class="item-title">TECHNE</h4>
+                <p class="item-price">
+                  22 700
+                  <span class="rouble">&#8381;</span>
+                </p>
+              </a>
+              <ul class="wish-buy-icons">
+                <li><button class="heart"></button></li>
+                <li><a href="#" class="basket"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container flex-container">
+        <div>
+          <div class="logo"></div>
+          <ul>
+            <li>
+              <a href="tel:84994504797" class="footer-link"
+                >8 (499) 450-47-97</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@conquest.watch.ru" class="footer-link"
+                >info@conquest.watch.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>о компании</h4>
+          <ul>
+            <li><a href="" class="footer-link">Наши магазины</a></li>
+            <li><a href="" class="footer-link">Вакансии</a></li>
+            <li><a href="" class="footer-link">Наши магазины</a></li>
+            <li><a href="" class="footer-link">Сертификаты</a></li>
+            <li><a href="" class="footer-link">Отзывы</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>покупателям</h4>
+          <ul>
+            <li><a href="" class="footer-link">Каталог товаров</a></li>
+            <li><a href="" class="footer-link">Как заказать?</a></li>
+            <li><a href="" class="footer-link">FAQ</a></li>
+            <li><a href="" class="footer-link">Корпоративным клиентам</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>оплата и доставка</h4>
+          <ul>
+            <li><a href="" class="footer-link">Способы оплаты</a></li>
+            <li><a href="" class="footer-link">Время доставки</a></li>
+            <li><a href="" class="footer-link">Гарантии и ремонт</a></li>
+            <li><a href="" class="footer-link">Возврат и компенсация</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/card-description.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>
